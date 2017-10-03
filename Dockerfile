@@ -22,7 +22,7 @@ RUN pip install --upgrade pip
 RUN pip install awscli
 RUN curl https://releases.hashicorp.com/terraform/${tf_version}/terraform_${tf_version}_linux_amd64.zip -o terraform_${tf_version}_linux_amd64.zip
 RUN unzip terraform_${tf_version}_linux_amd64.zip -d /usr/local/bin && rm -f terraform_${tf_version}_linux_amd64.zip
-RUN curl https://releases.hashicorp.com/packer/1.0.4/packer_${pk_version}_linux_amd64.zip -o packer_${pk_version}_linux_amd64.zip
+RUN curl https://releases.hashicorp.com/packer/${pk_version}/packer_${pk_version}_linux_amd64.zip -o packer_${pk_version}_linux_amd64.zip
 RUN unzip packer_${pk_version}_linux_amd64.zip -d /usr/local/bin && rm -f packer_${pk_version}_linux_amd64.zip
 RUN ln -s /usr/local/bin/packer /usr/local/bin/packer-io
 
