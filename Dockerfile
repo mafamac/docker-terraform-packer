@@ -1,7 +1,7 @@
 FROM alpine:3.6
 MAINTAINER Kevin Law <kevin@stealsyour.pw>
 ARG tf_version="0.10.7"
-ARG pk_version="1.0.4"
+ARG pk_version="1.1.0"
 RUN apk update
 RUN apk upgrade
 RUN apk add ca-certificates && update-ca-certificates
