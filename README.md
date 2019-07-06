@@ -22,7 +22,6 @@ Docker image with [Hashicorp Terraform](https://www.terraform.io) + [Hashicorp P
 ## INFO
 - Workdir is set to /opt/workspace
 - Github: [https://github.com/thatarchguy/docker-terraform-packer](https://github.com/thatarchguy/docker-terraform-packer)
-- [Integration](#) with [Concourse CI](http://concourse.ci/)
 
 ## Usage
 ```bash
@@ -100,28 +99,4 @@ define terraform
 		-var aws_secret_key=${aws_secret_access_key}
 endef
 
-```
-
-### [Check the Concourse CI Pipeline used to build this image](https://github.com/marcelocorreia/docker-terraform/blob/master/pipeline.yml)
-
-#### Concourse Build Configuration Example
-
-```yaml
-platform: linux
-
-image_resource:
-  type: docker-image
-  source:
-    repository: thatarchguy/terraform-packer
-    tag: 'latest'
-
-inputs:
-- name: terraform-repo
-
-run:
-  path: terraform
-  args:
-  - plan
-  - -var-file
-  - variables.tfvars
 ```
