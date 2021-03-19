@@ -1,6 +1,6 @@
 FROM alpine:latest
 MAINTAINER Marcos Machado <marcos.rafael.machado@gmail.com>
-ARG tf_version="0.14.7"
+ARG tf_version="0.14.8"
 ARG pk_version="1.7.0"
 RUN apk update
 RUN apk upgrade

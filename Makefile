@@ -2,7 +2,7 @@ include terraform.mk
 
 REPOSITORY=docker-terraform-packer
 CONTAINER=terraform
-NAMESPACE=thatarchguy
+NAMESPACE=marcosmachado
 TF_VERSION=$(terraform -v | grep -P -o "\d+\.\d+\.\d+")
 PK_VERSION=$(packer-io -v)
 
