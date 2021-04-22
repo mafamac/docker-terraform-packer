@@ -1,7 +1,7 @@
 
 Docker image with [Hashicorp Terraform](https://www.terraform.io) + [Hashicorp Packer](https://www.packer.io) + [AWS CLI](https://aws.amazon.com/cli/) + [checkov](https://github.com/bridgecrewio/checkov) + Goodies
 
-##### Github [https://github.com/marcosmachado81/docker-terraform-packer](https://github.com/marcosmachado/docker-terraform-packer) forked from [https://github.com/thatarchguy/docker-terraform-packer](https://github.com/thatarchguy/docker-terraform-packer)
+##### Github [https://github.com/marcosmachado81/docker-terraform-packer](https://github.com/marcosmachado81/docker-terraform-packer) forked from [https://github.com/thatarchguy/docker-terraform-packer](https://github.com/thatarchguy/docker-terraform-packer)
 
 ### Packages
     - ca-certificates
