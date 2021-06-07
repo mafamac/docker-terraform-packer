@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Marcos Machado <marcos.rafael.machado@gmail.com>
-ARG tf_version="0.14.8"
-ARG pk_version="1.7.0"
+ARG tf_version="0.15.5"
+ARG pk_version="1.7.2"
 RUN apk update
 RUN apk upgrade
 RUN apk add ca-certificates && update-ca-certificates
